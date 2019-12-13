@@ -17,13 +17,25 @@ define("CMS_TITLE", "CMS Villegas Aldazosa");
 define("FILE_PREFIX", "");
 
 /**
- * Database Configuration Parameters
+ * Database Configuration Parameters LocalHost
  */
-define("DATABASE_SERVER", "localhost");
+
+/*define("DATABASE_SERVER", "localhost");
 define("DATABASE_PORT", "3306");
 define("DATABASE_NAME", "web");
 define("DATABASE_USERNAME", "root");
 define("DATABASE_PASSWORD", "");
+define("DATABASE_PREFIX", "");*/
+
+/**
+ * Database Configuration Parameters Server
+ */
+
+define("DATABASE_SERVER", "localhost");
+define("DATABASE_PORT", "3306");
+define("DATABASE_NAME", "v-a-database");
+define("DATABASE_USERNAME", "VillegasAldazosa");
+define("DATABASE_PASSWORD", "@uYAd?&}@x?1");
 define("DATABASE_PREFIX", "");
 
 /**
