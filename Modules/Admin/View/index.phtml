@@ -1,0 +1,68 @@
+<div class="formulario">
+    <div class="title">
+        <h2>Dashboard</h2>
+
+    </div>
+</div>
+<div class="clear"></div>
+<div class="dashboard">
+
+    <div class="icons">
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel info-box panel-white">
+                        <div class="panel-body">
+                            <div class="info-box-stats">
+                                <p class="counter"><?= Tracking_Model_Tracking::getInstance()->count()[0]->number; ?></p>
+                                <span class="info-box-title">Visitas x mes</span>
+                            </div>
+                            <div class="info-box-icon">
+                                <i class="icon-users"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel info-box panel-white">
+                        <div class="panel-body">
+                            <div class="info-box-stats">
+                                <p class="counter"><?= Tracking_Model_Tracking::getInstance()->countUnique()[0]->number; ?></p>
+                                <span class="info-box-title">Visitas unicas x mes</span>
+                            </div>
+                            <div class="info-box-icon">
+                                <i class="icon-eye"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel info-box panel-white">
+                        <div class="panel-body">
+                            <div class="info-box-stats">
+                                <p class="counter"><?= Contact_Model_Contact::getInstance()->countAll()[0]->number; ?></p>
+                                <span class="info-box-title">Mesajes recibidos</span>
+                            </div>
+                            <div class="info-box-icon">
+                                <i class="icon-envelope"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row -->
+           
+
+
+
+            <!-- Main Wrapper -->
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
