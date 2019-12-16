@@ -97,29 +97,17 @@
 </div>
 <div class="attorna-body-outer-wrapper ">
     <div class="attorna-body-wrapper clearfix  attorna-with-frame">
-        <div class=attorna-top-bar>
-            <div class=attorna-top-bar-background></div>
-            <div class="attorna-top-bar-container attorna-container ">
-                <div class="attorna-top-bar-container-inner clearfix">
-                    <div class="attorna-top-bar-left attorna-item-pdlr"><i class="fa fa-phone" style="font-size: 15px ;color: #3488B3 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription; ?>
-                        <div style="margin-left: 12px; margin-right: 14px; display: inline;">&#183;</div><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #3488B3 ;margin-right: 10px ;"></i><a href=mailto:<?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?>><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></a>
-                        <div style="margin-left: 10px; margin-right: 13px; display: inline;">&#183;</div><i class=icon_clock_alt style="font-size: 15px ;color: #3488B3 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription; ?></div><a class=attorna-top-bar-right-button href=contact.html target=_self><i class="fa fa-comment-o" ></i>Free consultant</a>
-                    <div class="attorna-top-bar-right attorna-item-pdlr">
-                        <div class=attorna-top-bar-right-social><a href=# target=_blank class=attorna-top-bar-social-icon title=facebook><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=linkedin><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=pinterest><i class="fa fa-pinterest-p" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=twitter><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=instagram><i class="fa fa-instagram" ></i></a></div>
-                    </div>
-                </div>
+        <div class="attorna-logo  attorna-item-pdlr">
+            <div class=attorna-logo-inner style="margin: auto;">
+                <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
             </div>
         </div>
         <header class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed" data-navigation-offset=75px>
             <div class=attorna-header-background></div>
             <div class="attorna-header-container  attorna-container">
                 <div class="attorna-header-container-inner clearfix">
-                    <div class="attorna-logo  attorna-item-pdlr">
-                        <div class=attorna-logo-inner>
-                            <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
-                        </div>
-                    </div>
-                    <div class="attorna-navigation attorna-item-pdlr clearfix ">
+                    
+                    <div class="attorna-navigation attorna-item-pdlr clearfix" style="width: 100%;text-align: center;">
                         <div class=attorna-main-menu id=attorna-main-menu>
                             <ul id=menu-main-navigation-1 class=sf-menu>
                                 <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render(); ?>
@@ -173,7 +161,7 @@
                                             <div class=gdlr-core-pbf-element>
                                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align">
                                                     <div class=gdlr-core-divider-container style="max-width: 39px ;">
-                                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;border-bottom-width: 4px ;"></div>
+                                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;border-bottom-width: 4px ;"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,7 +213,7 @@
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 70px ;">
-                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;height: 27px ;"></div>
+                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;height: 27px ;"></div>
                                 </div>
                               
                                  <?php Services_Widget_Services::getInstance()->setLan($this->lan)->render(); ?>
@@ -429,7 +417,7 @@
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align" style="margin-bottom: 20px ;">
                                                 <div class=gdlr-core-divider-container style="max-width: 40px ;">
-                                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;border-bottom-width: 6px ;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;"></div>
+                                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;border-bottom-width: 6px ;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -468,7 +456,7 @@
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 43px ;">
-                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;height: 27px ;"></div>
+                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;height: 27px ;"></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -499,14 +487,14 @@
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
                                     <div class=gdlr-core-text-box-item-content style="text-transform: none ;color: #ffffff ;">
-                                        <div style="margin-left: 12px; margin-right: 0px; display: inline;"><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #0F3C5B ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></div>
-                                        <div style="margin-left: 9px; margin-right: 13px; display: inline;">· <i class=icon_clock_alt style="font-size: 15px ;color: #0F3C5B ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription; ?></div>
+                                        <div style="margin-left: 12px; margin-right: 0px; display: inline;"><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #071D49 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></div>
+                                        <div style="margin-left: 9px; margin-right: 13px; display: inline;">· <i class=icon_clock_alt style="font-size: 15px ;color: #071D49 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription; ?></div>
                                     </div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 50px ;">
-                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;height: 27px ;"></div>
+                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;height: 27px ;"></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -540,14 +528,14 @@
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #0e3c5b ;margin-bottom: 7px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleNews")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #071D49 ;margin-bottom: 7px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleNews")->TxtDescription; ?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
                                         <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;color: #2b2b2b ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleNews")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 43px ;">
-                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0F3C5B ;height: 27px ;"></div>
+                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;height: 27px ;"></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -558,7 +546,7 @@
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-gradient gdlr-core-button-no-border" href="<?= Com_Helper_Url::getInstance()->urlBase; ?>/es/page/noticias.html" style="font-size: 13px ;font-weight: 700 ;letter-spacing: 2px ;color: #ffffff ;padding: 12px 24px 14px 28px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #0e3c5b ;"><span class=gdlr-core-content ><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNews")->TxtDescription; ?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right"  ></i></a></div>
+                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-gradient gdlr-core-button-no-border" href="<?= Com_Helper_Url::getInstance()->urlBase; ?>/es/page/noticias.html" style="font-size: 13px ;font-weight: 700 ;letter-spacing: 2px ;color: #ffffff ;padding: 12px 24px 14px 28px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #071D49 ;"><span class=gdlr-core-content ><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNews")->TxtDescription; ?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right"  ></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -593,7 +581,7 @@
                                 <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter(); ?>
                                     <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
                                     <br> <?= Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription; ?></p>
-                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href=#url target=_blank class=gdlr-core-social-network-icon title=facebook style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=pinterest style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-pinterest-p" ></i></a><a href=#url target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=instagram style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-instagram" ></i></a></div>
+                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href=#url target=_blank class=gdlr-core-social-network-icon title=facebook style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=pinterest style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-pinterest-p" ></i></a><a href=#url target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=instagram style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-instagram" ></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -603,7 +591,7 @@
                             <div class=textwidget>
                                 <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription; ?></p>
                                 <p><span style="color: #fff;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription; ?></span>
-                                    <br> <span style="color: #55ABDB;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></span></p>
+                                    <br> <span style="color: #545d66;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></span></p>
                             </div>
                         </div>
                     </div>

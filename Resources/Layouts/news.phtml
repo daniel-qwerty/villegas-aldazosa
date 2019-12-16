@@ -113,55 +113,30 @@
 </div>
 <div class="attorna-body-outer-wrapper ">
     <div class="attorna-body-wrapper clearfix  attorna-with-frame">
-        <div class=attorna-top-bar>
-            <div class=attorna-top-bar-background></div>
-            <div class="attorna-top-bar-container attorna-container ">
-                <div class="attorna-top-bar-container-inner clearfix">
-                    <div class="attorna-top-bar-left attorna-item-pdlr"><i class="fa fa-phone" style="font-size: 15px ;color: #3488B3 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription; ?>
-                        <div style="margin-left: 12px; margin-right: 14px; display: inline;">&#183;</div><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #3488B3 ;margin-right: 10px ;"></i><a href=mailto:<?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?>><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></a>
-                        <div style="margin-left: 10px; margin-right: 13px; display: inline;">&#183;</div><i class=icon_clock_alt style="font-size: 15px ;color: #3488B3 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription; ?></div><a class=attorna-top-bar-right-button href=contact.html target=_self><i class="fa fa-comment-o" ></i>Free consultant</a>
-                    <div class="attorna-top-bar-right attorna-item-pdlr">
-                        <div class=attorna-top-bar-right-social><a href=# target=_blank class=attorna-top-bar-social-icon title=facebook><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=linkedin><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=pinterest><i class="fa fa-pinterest-p" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=twitter><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=attorna-top-bar-social-icon title=instagram><i class="fa fa-instagram" ></i></a></div>
+    <div class="attorna-logo  attorna-item-pdlr">
+        <div class=attorna-logo-inner style="margin: auto;">
+            <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
+        </div>
+    </div>
+    <header class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed" data-navigation-offset=75px>
+        <div class=attorna-header-background></div>
+        <div class="attorna-header-container  attorna-container">
+            <div class="attorna-header-container-inner clearfix">
+                
+                <div class="attorna-navigation attorna-item-pdlr clearfix" style="width: 100%;text-align: center;">
+                    <div class=attorna-main-menu id=attorna-main-menu>
+                        <ul id=menu-main-navigation-1 class=sf-menu>
+                            <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render(); ?>
+                        </ul>
+                        <div class=attorna-navigation-slide-bar id=attorna-navigation-slide-bar></div>
+                    </div>
+                    <div class="attorna-main-menu-right-wrap clearfix ">
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <header class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed" data-navigation-offset=75px>
-            <div class=attorna-header-background></div>
-            <div class="attorna-header-container  attorna-container">
-                <div class="attorna-header-container-inner clearfix">
-                    <div class="attorna-logo  attorna-item-pdlr">
-                        <div class=attorna-logo-inner>
-                            <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
-                        </div>
-                    </div>
-                    <div class="attorna-navigation attorna-item-pdlr clearfix ">
-                        <div class=attorna-main-menu id=attorna-main-menu>
-                            <ul id=menu-main-navigation-1 class=sf-menu>
-                                <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render(); ?>
-                            </ul>
-                            <div class=attorna-navigation-slide-bar id=attorna-navigation-slide-bar></div>
-                        </div>
-                        <div class="attorna-main-menu-right-wrap clearfix ">
-                            <div class=attorna-main-menu-search id=attorna-top-search><i class="fa fa-search"></i></div>
-                            <div class=attorna-top-search-wrap>
-                                <div class=attorna-top-search-close></div>
-                                <div class=attorna-top-search-row>
-                                    <div class=attorna-top-search-cell>
-                                        <form role=search method=get class=search-form action=#>
-                                        <input type=text class="search-field attorna-title-font" placeholder=Search... value name=s>
-                                        <div class=attorna-top-search-submit><i class="fa fa-search"></i></div>
-                                        <input type=submit class=search-submit value=Search>
-                                        <div class=attorna-top-search-close><i class=icon_close></i></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    </header>
 
         
         <div class="attorna-page-title-wrap  attorna-style-custom attorna-center-align">
@@ -200,7 +175,7 @@
                                 <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter(); ?>
                                     <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
                                     <br> <?= Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription; ?></p>
-                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href=#url target=_blank class=gdlr-core-social-network-icon title=facebook style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=pinterest style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-pinterest-p" ></i></a><a href=#url target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=instagram style="font-size: 16px ;color: #55ABDB ;"><i class="fa fa-instagram" ></i></a></div>
+                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href=#url target=_blank class=gdlr-core-social-network-icon title=facebook style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=pinterest style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-pinterest-p" ></i></a><a href=#url target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=instagram style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-instagram" ></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -210,7 +185,7 @@
                             <div class=textwidget>
                                 <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription; ?></p>
                                 <p><span style="color: #fff;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription; ?></span>
-                                    <br> <span style="color: #55ABDB;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></span></p>
+                                    <br> <span style="color: #545d66;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></span></p>
                             </div>
                         </div>
                     </div>
