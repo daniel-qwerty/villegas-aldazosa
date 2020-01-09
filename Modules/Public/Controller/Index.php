@@ -27,7 +27,7 @@ class Public_Controller_Index extends Com_Module_Controller_Language {
 //            exit;
 //        }
 
-        //$this->translator = json_decode(file_get_contents($fileDir));
+        $this->translator = json_decode(file_get_contents($fileDir));
 
         if (get("publicCountry") == "") {
             $ip = get('REMOTE_ADDR');
