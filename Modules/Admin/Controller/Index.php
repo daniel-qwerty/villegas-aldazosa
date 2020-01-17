@@ -32,7 +32,7 @@ class Admin_Controller_Index extends Com_Module_Controller {
                 //set user country
                 set('userCountry', $country, "SESSION");
                 Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_INFORMATION, "Bienvenid(@) : {$obj->UserName}");
-                $this->redirect(Com_Helper_Url::getInstance()->urlBase . "/Admin/Admin");
+                $this->redirect(Com_Helper_Url::getInstance()->urlBase . "/Admin/Texts");
             }
             Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_WARNING, "Usuario y/o Codigo de Acceso Incorrecto!!!");
         }

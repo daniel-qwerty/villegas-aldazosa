@@ -8,7 +8,7 @@ define("DEBUG_MODE", true);
 /**
  * Application Data
  */
-define("APP_TITLE", "San Jorge");
+define("APP_TITLE", "CMS Villegas Aldazosa");
 define("CMS_TITLE", "CMS Villegas Aldazosa");
 
 /**
