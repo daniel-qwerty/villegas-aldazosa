@@ -20,23 +20,18 @@ define("FILE_PREFIX", "");
  * Database Configuration Parameters LocalHost
  */
 
-define("DATABASE_SERVER", "localhost");
-define("DATABASE_PORT", "3306");
-define("DATABASE_NAME", "web");
-define("DATABASE_USERNAME", "root");
-define("DATABASE_PASSWORD", "");
-define("DATABASE_PREFIX", "");
+// define("DATABASE_SERVER", "localhost");
+// define("DATABASE_PORT", "3306");
+// define("DATABASE_NAME", "web");
+// define("DATABASE_USERNAME", "root");
+// define("DATABASE_PASSWORD", "");
+// define("DATABASE_PREFIX", "");
 
 /**
  * Database Configuration Parameters Server
  */
 
-/*define("DATABASE_SERVER", "localhost");
-define("DATABASE_PORT", "3306");
-define("DATABASE_NAME", "v-a-database");
-define("DATABASE_USERNAME", "VillegasAldazosa");
-define("DATABASE_PASSWORD", "@uYAd?&}@x?1");
-define("DATABASE_PREFIX", "");*/
+⁄
 
 /**
  * Email Settings
