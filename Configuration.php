@@ -31,7 +31,12 @@ define("FILE_PREFIX", "");
  * Database Configuration Parameters Server
  */
 
-⁄
+define("DATABASE_SERVER", "localhost");
+define("DATABASE_PORT", "3306");
+define("DATABASE_NAME", "v-a-database");
+define("DATABASE_USERNAME", "VillegasAldazosa");
+define("DATABASE_PASSWORD", "@uYAd?&}@x?1");
+define("DATABASE_PREFIX", "");
 
 /**
  * Email Settings
