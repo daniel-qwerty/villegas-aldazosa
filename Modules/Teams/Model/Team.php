@@ -1,16 +1,19 @@
 <?php
 
-class Teams_Model_Team extends Com_Module_Model {
+class Teams_Model_Team extends Com_Module_Model
+{
 
     /**
      *
      * @return Teams_Model_Team
      */
-    public static function getInstance() {
+    public static function getInstance()
+    {
         return self::_getInstance(__CLASS__);
     }
 
-    public function doInsert(Com_Object $obj, $languages, $image, $thumb) {
+    public function doInsert(Com_Object $obj, $languages, $image, $thumb)
+    {
 
         $db = new Entities_Team();
 
@@ -32,7 +35,6 @@ class Teams_Model_Team extends Com_Module_Model {
             $db->TeamInfo = $obj->Info;
             $db->TeamStatus = $obj->Status;
 
-            
             $db->action = ACTION_INSERT;
             $db->save();
         }
@@ -42,7 +44,8 @@ class Teams_Model_Team extends Com_Module_Model {
         return $id;
     }
 
-    public function doUpdate($intId, Com_Object $obj, $image, $thumb) {
+    public function doUpdate($intId, Com_Object $obj, $image, $thumb)
+    {
         $db = new Entities_Team();
         $db->TeamId = $intId;
         $db->TeamLanId = $obj->Language;
@@ -64,13 +67,14 @@ class Teams_Model_Team extends Com_Module_Model {
         $db->TeamContenido = $obj->Contenido;
         $db->TeamInfo = $obj->Info;
         $db->TeamStatus = $obj->Status;
-        
+
         $db->action = ACTION_UPDATE;
         $db->save();
         Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_INFORMATION, "Registro Actualizado");
     }
 
-    public function doDelete($intId) {
+    public function doDelete($intId)
+    {
         $db = new Entities_Team();
         $db->TeamId = $intId;
         $db->action = ACTION_DELETE;
@@ -78,7 +82,8 @@ class Teams_Model_Team extends Com_Module_Model {
         Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_INFORMATION, "Registro Eliminado");
     }
 
-    public function get($intId, $lanId) {
+    public function get($intId, $lanId)
+    {
         $db = new Entities_Team();
         $db->TeamId = $intId;
         $db->TeamLanId = $lanId;
@@ -86,25 +91,24 @@ class Teams_Model_Team extends Com_Module_Model {
         return $db;
     }
 
-    public function getList() {
+    public function getList()
+    {
         $text = new Entities_Team();
         return $text->getAll($text->getList());
     }
-    
-    public function getListTeam($lanId) {
+
+    public function getListTeam($lanId, $limit = 1000)
+    {
         $db = new Entities_Team();
-        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1"));
+        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1")->limit(0, $limit));
     }
 
-    public function getListTeamCargo($lanId, $cargoId) {
+    public function getListTeamCargo($lanId, $cargoId)
+    {
         $db = new Entities_Team();
         $result = Com_Database_Query::getInstance()->select()->from("Team")->where("TeamLanId={$lanId} and TeamCat={$cargoId} and TeamStatus = 1");
 
         return $db->getAll($result);
     }
-
-
-
-
 
 }

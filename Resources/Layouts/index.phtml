@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description"
-        content="<?= $this->page->PagDescription; ?>">
+        content="<?=$this->page->PagDescription;?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
     <!-- Google Authorship and Publisher Markup -->
@@ -12,28 +12,28 @@
     <link rel="publisher" href="https://www.urbsanjorge.com"/>
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="<?= $this->page->PagName; ?>">
-    <meta itemprop="description" content="<?= $this->page->PagDescription; ?>">
-    <meta itemprop="image" content="<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?php echo $this->page->PagImage;?>">
+    <meta itemprop="name" content="<?=$this->page->PagName;?>">
+    <meta itemprop="description" content="<?=$this->page->PagDescription;?>">
+    <meta itemprop="image" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@publisher_handle">
-    <meta name="twitter:title" content="<?= $this->page->PagName; ?>">
-    <meta name="twitter:description" content="<?= $this->page->PagDescription; ?>">
+    <meta name="twitter:title" content="<?=$this->page->PagName;?>">
+    <meta name="twitter:description" content="<?=$this->page->PagDescription;?>">
     <meta name="twitter:creator" content="@UrbSanJorge">
     <!-- Imagen de sumario de Twitter debe al menos tener 280x150px -->
-    <meta name="twitter:image:src" content="<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?php echo $this->page->PagImage;?>">
+    <meta name="twitter:image:src" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="<?= $this->page->PagName; ?>" />
+    <meta property="og:title" content="<?=$this->page->PagName;?>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content=" http://www.urbsanjorge.com/" />
-    <meta property="og:image" content="<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?php echo $this->page->PagImage;?>" />
-    <meta property="og:description" content="<?= $this->page->PagDescription; ?>" />
+    <meta property="og:image" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>" />
+    <meta property="og:description" content="<?=$this->page->PagDescription;?>" />
     <meta property="og:site_name" content="Urbanización San Jorge" />
 
-    <title><?= Configurations_Helper_Configuration::getInstance()->getKey('PAGE_TITLE'); ?></title>
+    <title><?=Configurations_Helper_Configuration::getInstance()->getKey('PAGE_TITLE');?></title>
 
 
     <link rel="apple-touch-icon" sizes="180x180"
@@ -50,26 +50,24 @@
         href="<?PHP echo Com_Helper_Url::getInstance()->getImage(); ?>/Public/favicons/favicon.ico"
         type="image/x-icon" />
 
-        
-    
+
+
 
     <?PHP
 
-    
-  Com_Helper_Style::getInstance()
-  ->addFile("Public/plugins/goodlayers-core/plugins/combine/style.css")
-  ->addFile("Public/plugins/goodlayers-core/include/css/page-builder.css")
-  ->addFile("Public/plugins/revslider/public/assets/css/settings.css")
-  ->addFile("Public/style-core.css")
-  ->addFile("Public/attorna-style-custom.css")
-  ->addFile("Public/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css")
- 
+Com_Helper_Style::getInstance()
+    ->addFile("Public/plugins/goodlayers-core/plugins/combine/style.css")
+    ->addFile("Public/plugins/goodlayers-core/include/css/page-builder.css")
+    ->addFile("Public/plugins/revslider/public/assets/css/settings.css")
+    ->addFile("Public/style-core.css")
+    ->addFile("Public/attorna-style-custom.css")
+    ->addFile("Public/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css")
 
-  ;
-  echo Com_Helper_Style::getInstance();
-  ?>
+;
+echo Com_Helper_Style::getInstance();
+?>
   <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic&amp;' type=text/css media=all>
-    
+
 </head>
 
 <body class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js attorna-body attorna-body-front attorna-full  attorna-with-sticky-navigation  attorna-blockquote-style-1 gdlr-core-link-to-lightbox" data-home-url=index.html>
@@ -78,16 +76,16 @@
         <div class="attorna-mobile-header-container attorna-container clearfix">
             <div class="attorna-logo  attorna-item-pdlr">
                 <div class=attorna-logo-inner>
-                    <a class href=<?= Com_Helper_Url::getInstance()->urlBase; ?>/es/page/index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
+                    <a class href=<?=Com_Helper_Url::getInstance()->urlBase;?>/es/page/index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu();?></a>
                 </div>
             </div>
             <div class=attorna-mobile-menu-right>
-                
+
 
                 <div class=attorna-mobile-menu><a class="attorna-mm-menu-button attorna-mobile-menu-button attorna-mobile-button-hamburger-with-border" href=#attorna-mobile-menu><i class="fa fa-bars" ></i></a>
                     <div class="attorna-mm-menu-wrap attorna-navigation-font" id=attorna-mobile-menu data-slide=right>
                         <ul id=menu-main-navigation class=m-menu>
-                           <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render(); ?>
+                           <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
                         </ul>
                     </div>
                 </div>
@@ -99,23 +97,23 @@
     <div class="attorna-body-wrapper clearfix  attorna-with-frame">
         <div class="attorna-logo  attorna-item-pdlr">
             <div class=attorna-logo-inner style="margin: auto;">
-                <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu(); ?></a>
+                <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu();?></a>
             </div>
         </div>
         <header class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed" data-navigation-offset=75px>
             <div class=attorna-header-background></div>
             <div class="attorna-header-container  attorna-container">
                 <div class="attorna-header-container-inner clearfix">
-                    
+
                     <div class="attorna-navigation attorna-item-pdlr clearfix" style="width: 100%;text-align: center;">
                         <div class=attorna-main-menu id=attorna-main-menu>
                             <ul id=menu-main-navigation-1 class=sf-menu>
-                                <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render(); ?>
+                                <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
                             </ul>
                             <div class=attorna-navigation-slide-bar id=attorna-navigation-slide-bar></div>
                         </div>
                         <div class="attorna-main-menu-right-wrap clearfix ">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -132,8 +130,8 @@
                                     <div id=rev_slider_1_1_wrapper class="rev_slider_wrapper fullwidthbanner-container" data-source=gallery style="margin:0px auto;background:#202020;padding:0px;margin-top:0px;margin-bottom:0px;">
                                         <div id=rev_slider_1_1 class="rev_slider fullwidthabanner" style=display:none; data-version=5.4.8.2>
                                             <ul>
-                                                
-                                                <?php SlideShows_Widget_Slideshow::getInstance()->setLan($this->lan)->setType(0)->render(); ?>
+
+                                                <?php SlideShows_Widget_Slideshow::getInstance()->setLan($this->lan)->setType(0)->render();?>
                                             </ul>
                                             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
                                         </div>
@@ -155,7 +153,7 @@
                                             <div class=gdlr-core-pbf-element>
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 8px ;">
                                                     <div class="gdlr-core-title-item-title-wrap ">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 16px ;font-weight: 700 ;letter-spacing: 4px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleAbout")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 16px ;font-weight: 700 ;letter-spacing: 4px ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleAbout")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                                 </div>
                                             </div>
                                             <div class=gdlr-core-pbf-element>
@@ -168,21 +166,21 @@
                                             <div class=gdlr-core-pbf-element>
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 15px ;">
                                                     <div class=gdlr-core-text-box-item-content style="text-transform: none ;">
-                                                        <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeDescriptionAbout")->TxtDescription; ?></p>
+                                                        <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeDescriptionAbout")->TxtDescription;?></p>
 
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class=gdlr-core-pbf-element>
                                                 <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-left-align">
-                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeSignAbout')->GalFile; ?>" alt width=254 height=47 title=sign-black></div>
+                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px; display:block;"><img  src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeSignAbout')->GalFile;?>" alt width=254 height=47 title=sign-black style="margin:auto;display:block;"></div>
 
                                                 </div>
                                             </div>
                                             <div class=gdlr-core-pbf-element>
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                                     <div class=gdlr-core-text-box-item-content style="font-size: 11px ;font-weight: 400 ;letter-spacing: 4px ;text-transform: uppercase ;">
-                                                        <p> <?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSign")->TxtDescription; ?></p>
+                                                        <p style="text-align:center"> <?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeSign")->TxtDescription;?></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -192,7 +190,7 @@
                                 <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-hide-in-mobile">
                                     <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " data-sync-height=height-about>
                                         <div class=gdlr-core-pbf-background-wrap style="border-radius: 0px 4px 4px 0px;-moz-border-radius: 0px 4px 4px 0px;-webkit-border-radius: 0px 4px 4px 0px;">
-                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeImageAbout')->GalFile; ?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0></div>
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeImageAbout')->GalFile;?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0></div>
                                         </div>
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content"></div>
                                     </div>
@@ -206,33 +204,31 @@
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 13px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #a8a8a8 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeLegalPracticeAreasSubTitle")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 13px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #a8a8a8 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeLegalPracticeAreasSubTitle")->TxtDescription;?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeLegalPracticeAreasTitle")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeLegalPracticeAreasTitle")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 70px ;">
                                     <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #071D49 ;height: 27px ;"></div>
                                 </div>
-                              
-                                 <?php Services_Widget_Services::getInstance()->setLan($this->lan)->render(); ?>
+                                 <?php Services_Widget_Services::getInstance()->setLan($this->lan)->render();?>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
                 <div class="gdlr-core-pbf-wrapper " style="padding: 170px 0px 225px 0px;" data-skin="white client" id=gdlr-core-wrapper-2>
                     <div class=gdlr-core-pbf-background-wrap>
-                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeWeAreExpert')->GalFile; ?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
+                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeWeAreExpert')->GalFile;?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
                     </div>
                     <div class=gdlr-core-pbf-background-frame style="margin: 60px 60px 60px 60px;border-width: 1px 1px 1px 1px;border-style: solid ;border-color: #686868 ;"></div>
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 500 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;color: #929294 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeWeAreExpert")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 500 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;color: #929294 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeWeAreExpert")->TxtDescription;?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 33px ;font-weight: 700 ;text-transform: none ;color: #ffffff ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsTitle")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 33px ;font-weight: 700 ;text-transform: none ;color: #ffffff ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsTitle")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -246,7 +242,7 @@
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 20px ;">
                                                 <div class=gdlr-core-text-box-item-content style="font-size: 17px ;font-weight: 400 ;text-transform: none ;color: #c4c4c4 ;">
-                                                    <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsContent")->TxtDescription; ?></p>
+                                                    <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsContent")->TxtDescription;?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,7 +255,7 @@
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 20px ;">
                                                 <div class=gdlr-core-text-box-item-content style="font-size: 17px ;font-weight: 400 ;text-transform: none ;color: #c4c4c4 ;">
-                                                    <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsContent")->TxtDescription; ?></p>
+                                                    <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeWhyChoseUsContent")->TxtDescription;?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,8 +267,8 @@
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
-                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeClientsNumber")->TxtDescription; ?>>0</span><span class=gdlr-core-counter-item-suffix>+</span></div>
-                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeClientsTitle")->TxtDescription; ?></div>
+                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeClientsNumber")->TxtDescription;?>>0</span><span class=gdlr-core-counter-item-suffix>+</span></div>
+                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeClientsTitle")->TxtDescription;?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -283,8 +279,8 @@
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
-                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomePercentCases")->TxtDescription; ?>>0</span><span class=gdlr-core-counter-item-suffix>%</span></div>
-                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeCasesTitle")->TxtDescription; ?></div>
+                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomePercentCases")->TxtDescription;?>>0</span><span class=gdlr-core-counter-item-suffix></span></div>
+                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeCasesTitle")->TxtDescription;?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -295,8 +291,8 @@
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
-                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeRecoveredCostNumber")->TxtDescription; ?>>0</span><span class=gdlr-core-counter-item-suffix>mIns</span></div>
-                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeRecoveredCostTitle")->TxtDescription; ?></div>
+                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeRecoveredCostNumber")->TxtDescription;?>>0</span><span class=gdlr-core-counter-item-suffix></span></div>
+                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeRecoveredCostTitle")->TxtDescription;?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -307,8 +303,8 @@
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
-                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeProfessionalsNumber")->TxtDescription; ?>>0</span><span class=gdlr-core-counter-item-suffix>+</span></div>
-                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeProfessionalsTitle")->TxtDescription; ?></div>
+                                                <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 52px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration data-counter-start=0 data-counter-end=<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeProfessionalsNumber")->TxtDescription;?>>0</span><span class=gdlr-core-counter-item-suffix>+</span></div>
+                                                <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 17px ;font-weight: 400 ;text-transform: none ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeProfessionalsTitle")->TxtDescription;?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -324,13 +320,13 @@
                             <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id=gdlr-core-column-4>
                                 <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 80px 60px 0px 60px;">
                                     <div class=gdlr-core-pbf-background-wrap style="box-shadow: 0 0 46px rgba(0, 0, 0,0.08); -moz-box-shadow: 0 0 46px rgba(0, 0, 0,0.08); -webkit-box-shadow: 0 0 46px rgba(0, 0, 0,0.08); border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px;">
-                                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeFormContact')->GalFile; ?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
+                                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeFormContact')->GalFile;?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
                                     </div>
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 55px ;">
                                                 <div class="gdlr-core-title-item-title-wrap ">
-                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #303030 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeFormContactTitle")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal ;color: #6d6d6d ;margin-top: 15px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeFormContactDescription")->TxtDescription; ?></div>
+                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #303030 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeFormContactTitle")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal ;color: #6d6d6d ;margin-top: 15px ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeFormContactDescription")->TxtDescription;?></div>
                                         </div>
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
@@ -371,18 +367,18 @@
                 </div>
                 <div class="gdlr-core-pbf-wrapper " style="padding: 100px 0px 45px 0px;background-color: #f2f2f2 ;">
                     <div class=gdlr-core-pbf-background-wrap style="bottom: 293px ;">
-                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeImagePartners')->GalFile; ?>) ;background-repeat: repeat ;background-position: center ;" data-parallax-speed=0></div>
+                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeImagePartners')->GalFile;?>) ;background-repeat: repeat ;background-position: center ;" data-parallax-speed=0></div>
                     </div>
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 0px ;">
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomePartnersTitle")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomePartnersTitle")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px ;"><a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border" href=# style="font-size: 13px ;font-weight: 600 ;letter-spacing: 2px ;color: #929294 ;padding: 10px 33px 15px 33px;"><span class=gdlr-core-content ><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomePartnersSubtitle")->TxtDescription; ?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right" style="color: #929294 ;"  ></i></a></div>
+                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px ;"><a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border" href="<?=Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/page/equipo.html'?>" style="font-size: 13px ;font-weight: 600 ;letter-spacing: 2px ;color: #929294 ;padding: 10px 33px 15px 33px;"><span class=gdlr-core-content ><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomePartnersSubtitle")->TxtDescription;?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right" style="color: #929294 ;"  ></i></a></div>
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align gdlr-core-style-vertical" style="margin-bottom: 55px ;">
@@ -390,12 +386,8 @@
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-with-background gdlr-core-personnel-style-grid gdlr-core-with-background gdlr-core-item-pdlr">
-                                    <div class="gdlr-core-flexslider flexslider gdlr-core-js-2  gdlr-core-bottom-nav-1" data-type=carousel data-column=3 data-move=1 data-nav=navigation-bottom data-nav-parent=gdlr-core-personnel-item data-disable-autoslide=1>
-                                        <ul class=slides>
-                                             <?php Teams_Widget_Team::getInstance()->setLan($this->lan)->render(); ?>
-                                        </ul>
-                                    </div>
+                                <div class="team">
+                                     <?php Teams_Widget_Team::getInstance()->setLan($this->lan)->render();?>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +403,7 @@
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 12px ;">
                                                 <div class="gdlr-core-title-item-title-wrap ">
-                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 24px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #818283 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "BestSerivceTitle")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 24px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #818283 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "BestSerivceTitle")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                             </div>
                                         </div>
                                         <div class=gdlr-core-pbf-element>
@@ -430,18 +422,18 @@
                                         <div class=gdlr-core-pbf-element>
                                             <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
                                                 <div class=gdlr-core-text-box-item-content style="font-size: 17px ;font-weight: 400 ;text-transform: none ;color: #6d6d6d ;">
-                                                    <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "BestSerivceDescription")->TxtDescription; ?></p>
+                                                    <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "BestSerivceDescription")->TxtDescription;?></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <?php SlideShows_Widget_Slideshow::getInstance()->setLan($this->lan)->setType(1)->renderBestService(); ?>
+                            <?php SlideShows_Widget_Slideshow::getInstance()->setLan($this->lan)->setType(1)->renderBestService();?>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="gdlr-core-pbf-wrapper  " style="padding: 90px 0px 25px 0px; display:none" data-skin="Grey Carousel">
                     <div class=gdlr-core-pbf-background-wrap>
                         <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
@@ -449,9 +441,9 @@
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;color: #a8a8a8 ;margin-bottom: 7px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleCaseStudies")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;color: #a8a8a8 ;margin-bottom: 7px ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleCaseStudies")->TxtDescription;?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;color: #303030 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleCaseStudies")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;color: #303030 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleCaseStudies")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -463,7 +455,7 @@
                                 <div class="gdlr-core-portfolio-item gdlr-core-item-pdb clearfix  gdlr-core-portfolio-item-style-modern-desc-no-space gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
                                     <div class="gdlr-core-flexslider flexslider gdlr-core-js-2  gdlr-core-bottom-nav-1" data-type=carousel data-column=5 data-move=1 data-nav=navigation-bottom data-nav-parent=gdlr-core-portfolio-item>
                                         <ul class=slides>
-                                            <?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType(2)->renderCaseStudios(); ?>
+                                            <?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType(2)->renderCaseStudios();?>
                                         </ul>
                                     </div>
                                 </div>
@@ -473,22 +465,22 @@
                 </div>
                 <div class="gdlr-core-pbf-wrapper " style="padding: 160px 0px 110px 0px;" data-skin=Newsletter id=gdlr-core-wrapper-5>
                     <div class=gdlr-core-pbf-background-wrap>
-                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?= Gallery_Helper_Gallery::getInstance()->get($this->lan,'HomeImageSuscribe')->GalFile; ?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
+                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?=Gallery_Helper_Gallery::getInstance()->get($this->lan, 'HomeImageSuscribe')->GalFile;?>) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.2></div>
                     </div>
                     <div class=gdlr-core-pbf-background-frame style="margin: 55px 55px 55px 55px;border-width: 1px 1px 1px 1px;border-style: solid ;border-color: #686868 ;"></div>
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 18px ;font-weight: 700 ;font-style: normal ;letter-spacing: 4px ;text-transform: uppercase ;color: #ffffff ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleSuscribe")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 18px ;font-weight: 700 ;font-style: normal ;letter-spacing: 4px ;text-transform: uppercase ;color: #ffffff ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleSuscribe")->TxtDescription;?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #929294 ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleSuscribe")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #929294 ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleSuscribe")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
                                     <div class=gdlr-core-text-box-item-content style="text-transform: none ;color: #ffffff ;">
-                                        <div style="margin-left: 12px; margin-right: 0px; display: inline;"><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #071D49 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></div>
-                                        <div style="margin-left: 9px; margin-right: 13px; display: inline;">· <i class=icon_clock_alt style="font-size: 15px ;color: #071D49 ;margin-right: 10px ;"></i><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription; ?></div>
+                                        <div style="margin-left: 12px; margin-right: 0px; display: inline;"><i class="fa fa-envelope-open-o" style="font-size: 14px ;color: #071D49 ;margin-right: 10px ;"></i><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription;?></div>
+                                        <div style="margin-left: 9px; margin-right: 13px; display: inline;">· <i class=icon_clock_alt style="font-size: 15px ;color: #071D49 ;margin-right: 10px ;"></i><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactSchedule")->TxtDescription;?></div>
                                     </div>
                                 </div>
                             </div>
@@ -500,7 +492,7 @@
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 38px ;">
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 28px ;font-weight: 700 ;text-transform: none ;color: #ffffff ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleNewsletter")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 28px ;font-weight: 700 ;text-transform: none ;color: #ffffff ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleNewsletter")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -509,10 +501,10 @@
                                     <div class="newsletter newsletter-subscription">
                                         <form class="gdlr-core-newsletter-form clearfix" method=post action="#" onsubmit="return newsletter_check(this)">
                                             <div class=gdlr-core-newsletter-email>
-                                                <input class="newsletter-email gdlr-core-skin-e-background gdlr-core-skin-e-content" placeholder="<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTextBoxNewsletter")->TxtDescription; ?>" type=email name=ne size=30 required>
+                                                <input class="newsletter-email gdlr-core-skin-e-background gdlr-core-skin-e-content" placeholder="<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTextBoxNewsletter")->TxtDescription;?>" type=email name=ne size=30 required>
                                             </div>
                                             <div class=gdlr-core-newsletter-submit>
-                                                <input class=newsletter-submit type=submit value="<?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNewsletter")->TxtDescription; ?>">
+                                                <input class=newsletter-submit type=submit value="<?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNewsletter")->TxtDescription;?>">
                                             </div>
                                         </form>
                                     </div>
@@ -523,14 +515,14 @@
                 </div>
                 <div class="gdlr-core-pbf-wrapper " style="padding: 100px 0px 65px 0px;" id=gdlr-core-wrapper-6>
                     <div class=gdlr-core-pbf-background-wrap>
-                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?= Com_Helper_Url::getInstance()->getImage(); ?>/Public/work-bg.jpg) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.1></div>
+                        <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(<?=Com_Helper_Url::getInstance()->getImage();?>/Public/work-bg.jpg) ;background-size: cover ;background-position: center ;" data-parallax-speed=0.1></div>
                     </div>
                     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                         <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #071D49 ;margin-bottom: 7px ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleNews")->TxtDescription; ?></span>
+                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;"><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 600 ;font-style: normal ;letter-spacing: 3px ;text-transform: uppercase ;color: #071D49 ;margin-bottom: 7px ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeSubTitleNews")->TxtDescription;?></span>
                                     <div class="gdlr-core-title-item-title-wrap ">
-                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;color: #2b2b2b ;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleNews")->TxtDescription; ?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 30px ;font-weight: 700 ;text-transform: none ;color: #2b2b2b ;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeTitleNews")->TxtDescription;?><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
@@ -541,12 +533,12 @@
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-column-with-frame" style="padding-bottom: 15px ;">
                                     <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout=fitrows>
-                                        <?php Events_Widget_Recientes::getInstance()->setLan($this->lan)->setLimit(3)->render(); ?>
+                                        <?php Events_Widget_Recientes::getInstance()->setLan($this->lan)->setLimit(3)->render();?>
                                     </div>
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-gradient gdlr-core-button-no-border" href="<?= Com_Helper_Url::getInstance()->urlBase; ?>/es/page/noticias.html" style="font-size: 13px ;font-weight: 700 ;letter-spacing: 2px ;color: #ffffff ;padding: 12px 24px 14px 28px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #071D49 ;"><span class=gdlr-core-content ><?= Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNews")->TxtDescription; ?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right"  ></i></a></div>
+                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-gradient gdlr-core-button-no-border" href="<?=Com_Helper_Url::getInstance()->urlBase;?>/es/page/noticias.html" style="font-size: 13px ;font-weight: 700 ;letter-spacing: 2px ;color: #ffffff ;padding: 12px 24px 14px 28px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #071D49 ;"><span class=gdlr-core-content ><?=Texts_Helper_Text::getInstance()->get($this->lan, "HomeBtnNews")->TxtDescription;?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right"  ></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -558,7 +550,7 @@
                             <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid" style="padding-bottom: 10px ;">
                                     <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout=fitrows>
-                                        <?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType('logos')->renderLogos(); ?>
+                                        <?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType('logos')->renderLogos();?>
                                     </div>
                                 </div>
                             </div>
@@ -578,38 +570,33 @@
                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
                         <div id=text-1 class="widget widget_text attorna-widget">
                             <div class=textwidget>
-                                <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter(); ?>
+                                <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter();?>
                                     <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
-                                    <br> <?= Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription; ?></p>
-                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href=#url target=_blank class=gdlr-core-social-network-icon title=facebook style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-facebook" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=pinterest style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-pinterest-p" ></i></a><a href=#url target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter" ></i></a><a href=# target=_blank class=gdlr-core-social-network-icon title=instagram style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-instagram" ></i></a></div>
+                                    <br> <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription;?></p>
+                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;">
+                                <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "linkedinUrl")->TxtDescription;?>" target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin" ></i></a>
+                                <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "twitterUrl")->TxtDescription;?>" target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter" ></i></a>
+
+                            </div>
                             </div>
                         </div>
                     </div>
                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
                         <div id=text-7 class="widget widget_text attorna-widget">
-                            <h3 class="attorna-widget-title"><?= Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitleContact")->TxtDescription; ?></h3><span class=clear></span>
+                            <h3 class="attorna-widget-title"><?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitleContact")->TxtDescription;?></h3><span class=clear></span>
                             <div class=textwidget>
-                                <p><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription; ?></p>
-                                <p><span style="color: #fff;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription; ?></span>
-                                    <br> <span style="color: #545d66;"><?= Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription; ?></span></p>
+                                <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription;?></p>
+                                <p><span style="color: #fff;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription;?></span>
+                                    <br> <span style="color: #545d66;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription;?></span></p>
                             </div>
                         </div>
                     </div>
                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-30">
                         <div id=gdlr-core-custom-menu-widget-4 class="widget widget_gdlr-core-custom-menu-widget attorna-widget">
-                            <h3 class="attorna-widget-title"><?= Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitlePracticeAreas")->TxtDescription; ?></h3><span class=clear></span>
+                            <h3 class="attorna-widget-title"><?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitlePracticeAreas")->TxtDescription;?></h3><span class=clear></span>
                             <div class=menu-practice-areas-container>
-                                <ul id=menu-practice-areas class="gdlr-core-custom-menu-widget gdlr-core-menu-style-half">
-                                    <li class="menu-item"><a href=#>Coporate &#038; Securities</a></li>
-                                    <li class="menu-item"><a href=#>Real Estate Law</a></li>
-                                    <li class="menu-item"><a href=#>Health Care Law</a></li>
-                                    <li class="menu-item"><a href=#>Insurance Law</a></li>
-                                    <li class="menu-item"><a href=#>Construction &#038; Engineering</a></li>
-                                    <li class="menu-item"><a href=#>Ecommerce Law</a></li>
-                                    <li class="menu-item"><a href=#>Private Fund</a></li>
-                                    <li class="menu-item"><a href=#>Power &#038; Energy</a></li>
-                                    <li class="menu-item"><a href=#>Lending Law</a></li>
-                                </ul>
+                                <?php Services_Widget_ServicesMenu::getInstance()->setLan($this->lan)->setParent(18)->render();?>
+
                             </div>
                         </div>
                     </div>
@@ -617,9 +604,9 @@
             </div>
             <div class=attorna-copyright-wrapper>
                 <div class="attorna-copyright-container attorna-container clearfix">
-                    <div class="attorna-copyright-left attorna-item-pdlr"><?= Texts_Helper_Text::getInstance()->get($this->lan, "Copyright")->TxtDescription; ?></div>
+                    <div class="attorna-copyright-left attorna-item-pdlr"><?=Texts_Helper_Text::getInstance()->get($this->lan, "Copyright")->TxtDescription;?></div>
                     <div class="attorna-copyright-right attorna-item-pdlr">
-                        <?php Menu_Widget_MenuFooter::getInstance()->setLan($this->lan)->setParent(18)->render(); ?>
+                        <?php Menu_Widget_MenuFooter::getInstance()->setLan($this->lan)->setParent(18)->render();?>
 
                         </div>
                 </div>
@@ -632,19 +619,19 @@
 
 
 
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/jquery/jquery.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/jquery/jquery-migrate.min.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
-<script src="<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery-migrate.min.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
 
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/goodlayers-core/plugins/combine/script.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/plugins/combine/script.js'></script>
 <script>
     var gdlr_core_pbf = {
         "admin": "",
@@ -655,13 +642,13 @@
         "ajax_url": "https:\/\/demo.goodlayers.com\/attorna\/wp-admin\/admin-ajax.php"
     };
 </script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/plugins/goodlayers-core/include/js/page-builder.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/include/js/page-builder.js'></script>
 
 
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/jquery/ui/effect.min.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/jquery.mmenu.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/jquery.superfish.js'></script>
-<script src='<?= Com_Helper_Url::getInstance()->urlBase; ?>/Resources/Script/Public/script-core.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/ui/effect.min.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.mmenu.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.superfish.js'></script>
+<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/script-core.js'></script>
 
 
 <script>
@@ -810,8 +797,8 @@
     }
 </script>
 
-   
-   
+
+
 </body>
 
 
