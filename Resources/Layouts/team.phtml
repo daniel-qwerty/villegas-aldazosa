@@ -158,6 +158,11 @@ echo Com_Helper_Style::getInstance();
                                 </div>
                             </div>
                             <div class=gdlr-core-pbf-element>
+                                <div class="team">
+                                     <?php Teams_Widget_Team::getInstance()->setLan($this->lan)->render();?>
+                                </div>
+                            </div>
+                            <div class=gdlr-core-pbf-element>
                                 <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-with-background gdlr-core-personnel-style-grid gdlr-core-with-background">
                                     <?php Teams_Widget_TeamList::getInstance()->setLan($this->lan)->setParent(18)->render();?>
 
