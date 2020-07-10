@@ -97,10 +97,10 @@ class Teams_Model_Team extends Com_Module_Model
         return $text->getAll($text->getList());
     }
 
-    public function getListTeam($lanId, $limit = 1000)
+    public function getListTeam($lanId, $limit = 1000, $inicio = 0)
     {
         $db = new Entities_Team();
-        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1")->limit(0, $limit));
+        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1")->limit($inicio, $limit));
     }
 
     public function getListTeamCargo($lanId, $cargoId)

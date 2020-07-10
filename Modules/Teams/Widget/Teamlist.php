@@ -35,13 +35,11 @@ class Teams_Widget_Team extends Com_Object
     public function render()
     {
 
-        $list = Teams_Model_Team::getInstance()->getListTeam($this->lan->LanId);
+        $list = Teams_Model_Team::getInstance()->getListTeam($this->lan->LanId, 3, 20);
 
         foreach ($list as $item) {
 
             ?>
-
-
                 <div class="gdlr-core-personnel-list gdlr-core-outer-frame-element clearfix" style="box-shadow: 0 0 35px rgba(10, 10, 10,0.08); -moz-box-shadow: 0 0 35px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0 0 35px rgba(10, 10, 10,0.08); border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; margin:5px;">
                     <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover gdlr-core-grayscale-effect">
                         <a href="<?=Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/perfil/' . $item->TeamId?>"><img src="<?PHP echo Com_Helper_Url::getInstance()->getUploads(); ?>/Image/<?=$item->TeamThumb?>" alt="<?=$item->TeamNombre?>" width=500 height=500 title="<?=$item->TeamNombre?>"></a>
