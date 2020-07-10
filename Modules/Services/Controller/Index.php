@@ -12,7 +12,7 @@ class Services_Controller_Index extends Public_Controller_Index
         $url = $url[count($url) - 1];
 
 
-        $modelo = Services_Model_Service::getInstance()->getByUrl($url, 7);
+        $modelo = Services_Model_Service::getInstance()->get($url, $this->lan->LanId);
         //$blog = Blog_Model_Blog::getInstance()->get($article->BitemBlogId, $this->lan->LanId);
         // $user = Users_Model_User::getInstance()->get($article->BitemAuthor);
         $this->assign("modelo", $modelo);

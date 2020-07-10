@@ -3700,7 +3700,7 @@ del span.woocommerce-Price-amount.amount {
   @media (min-width: 320px) and (max-width: 480px) {
     
     .team {
-        display: inline-flex;
+        display: block;
     }
     
   }
