@@ -1,8 +1,10 @@
 <?php
 
-class Contact_Controller_Service extends Com_Module_Controller_Json {
+class Contact_Controller_Service extends Com_Module_Controller_Json
+{
 
-    public function Save() {
+    public function Save()
+    {
         if ($this->isPost()) {
             $obj = $this->getPostObject();
             Contact_Model_Contact::getInstance()->doInsert($obj, null);
@@ -11,17 +13,18 @@ class Contact_Controller_Service extends Com_Module_Controller_Json {
         }
     }
 
-    private function sendEmail($emailClient, $nameClient, $messageClient) {
+    private function sendEmail($emailClient, $nameClient, $messageClient)
+    {
 
-        $to = Configurations_Helper_Configuration::getInstance()->getKey('EMAIL_CONTACT');
+        $to = "daniel.monroy.b@gmail.com"; //Configurations_Helper_Configuration::getInstance()->getKey('EMAIL_CONTACT');
         $subject = 'CONTACT FROM WEB';
         $message = '<html><body>';
-        $message .= '<h3>NAME: </h3>'.$nameClient.'<br> <h3>MESSAGE: </h3>'.$messageClient;
+        $message .= '<h3>NAME: </h3>' . $nameClient . '<br> <h3>MESSAGE: </h3>' . $messageClient;
         $message .= '</body></html>';
-        $headers = 'From:'.$emailClient . "\r\n" .
-                'Reply-To:'.$emailClient. "\r\n" .
-                'Content-Type: text/html; charset=ISO-8859-1\r\n';
-                'X-Mailer: PHP/' . phpversion();
+        $headers = 'From:' . $emailClient . "\r\n" .
+            'Reply-To:' . $emailClient . "\r\n" .
+            'Content-Type: text/html; charset=ISO-8859-1\r\n';
+        'X-Mailer: PHP/' . phpversion();
 
         mail($to, $subject, $message, $headers);
 
