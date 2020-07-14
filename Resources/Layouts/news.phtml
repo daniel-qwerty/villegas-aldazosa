@@ -1,23 +1,21 @@
-
-
 <!DOCTYPE html>
 <html lang=en-US class=no-js>
 
 
 <head>
     <meta charset="utf-8">
-    <meta name="description"
-        content="<?=$this->page->PagDescription;?>">
+    <meta name="description" content="<?=$this->page->PagDescription;?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
     <!-- Google Authorship and Publisher Markup -->
     <link rel="author" href="https://www.urbsanjorge.com">
-    <link rel="publisher" href="https://www.urbsanjorge.com"/>
+    <link rel="publisher" href="https://www.urbsanjorge.com" />
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="<?=$this->page->PagName;?>">
     <meta itemprop="description" content="<?=$this->page->PagDescription;?>">
-    <meta itemprop="image" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
+    <meta itemprop="image"
+        content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
@@ -26,13 +24,15 @@
     <meta name="twitter:description" content="<?=$this->page->PagDescription;?>">
     <meta name="twitter:creator" content="@UrbSanJorge">
     <!-- Imagen de sumario de Twitter debe al menos tener 280x150px -->
-    <meta name="twitter:image:src" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
+    <meta name="twitter:image:src"
+        content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="<?=$this->page->PagName;?>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content=" http://www.urbsanjorge.com/" />
-    <meta property="og:image" content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>" />
+    <meta property="og:image"
+        content="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?php echo $this->page->PagImage; ?>" />
     <meta property="og:description" content="<?=$this->page->PagDescription;?>" />
     <meta property="og:site_name" content="Urbanización San Jorge" />
 
@@ -69,166 +69,220 @@ Com_Helper_Style::getInstance()
 ;
 echo Com_Helper_Style::getInstance();
 ?>
-  <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic&amp;' type=text/css media=all>
+    <link rel=stylesheet
+        href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic&amp;'
+        type=text/css media=all>
 
 </head>
 
-<body class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js attorna-body attorna-body-front attorna-full  attorna-with-sticky-navigation  attorna-blockquote-style-1 gdlr-core-link-to-lightbox" data-home-url=index.html>
-<div class=attorna-mobile-header-wrap>
-    <div class="attorna-mobile-header attorna-header-background attorna-style-slide attorna-sticky-mobile-navigation " id=attorna-mobile-header>
-        <div class="attorna-mobile-header-container attorna-container clearfix">
-            <div class="attorna-logo  attorna-item-pdlr">
-                <div class=attorna-logo-inner>
-                    <a class href=index.html><img src= alt width=400 height=71 title=logo></a>
+<body
+    class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js attorna-body attorna-body-front attorna-full  attorna-with-sticky-navigation  attorna-blockquote-style-1 gdlr-core-link-to-lightbox"
+    data-home-url=index.html>
+    <div class=attorna-mobile-header-wrap>
+        <div class="attorna-mobile-header attorna-header-background attorna-style-slide attorna-sticky-mobile-navigation "
+            id=attorna-mobile-header>
+            <div class="attorna-mobile-header-container attorna-container clearfix">
+                <div class="attorna-logo  attorna-item-pdlr">
+                    <div class=attorna-logo-inner>
+                        <a class href=index.html><img src=alt width=400 height=71 title=logo></a>
+                    </div>
                 </div>
-            </div>
-            <div class=attorna-mobile-menu-right>
-                <div class=attorna-main-menu-search id=attorna-mobile-top-search><i class="fa fa-search"></i></div>
-                <div class=attorna-top-search-wrap>
-                    <div class=attorna-top-search-close></div>
-                    <div class=attorna-top-search-row>
-                        <div class=attorna-top-search-cell>
-                            <form role=search method=get class=search-form action=#>
-                            <input type=text class="search-field attorna-title-font" placeholder=Search... value name=s>
-                            <div class=attorna-top-search-submit><i class="fa fa-search"></i></div>
-                            <input type=submit class=search-submit value=Search>
-                            <div class=attorna-top-search-close><i class=icon_close></i></div>
-                            </form>
+                <div class=attorna-mobile-menu-right>
+                    <div class=attorna-main-menu-search id=attorna-mobile-top-search><i class="fa fa-search"></i></div>
+                    <div class=attorna-top-search-wrap>
+                        <div class=attorna-top-search-close></div>
+                        <div class=attorna-top-search-row>
+                            <div class=attorna-top-search-cell>
+                                <form role=search method=get class=search-form action=#>
+                                    <input type=text class="search-field attorna-title-font" placeholder=Search... value
+                                        name=s>
+                                    <div class=attorna-top-search-submit><i class="fa fa-search"></i></div>
+                                    <input type=submit class=search-submit value=Search>
+                                    <div class=attorna-top-search-close><i class=icon_close></i></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=attorna-mobile-menu><a
+                            class="attorna-mm-menu-button attorna-mobile-menu-button attorna-mobile-button-hamburger-with-border"
+                            href=#attorna-mobile-menu><i class="fa fa-bars"></i></a>
+                        <div class="attorna-mm-menu-wrap attorna-navigation-font" id=attorna-mobile-menu
+                            data-slide=right>
+                            <ul id=menu-main-navigation class=m-menu>
+                                <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class=attorna-mobile-menu><a class="attorna-mm-menu-button attorna-mobile-menu-button attorna-mobile-button-hamburger-with-border" href=#attorna-mobile-menu><i class="fa fa-bars" ></i></a>
-                    <div class="attorna-mm-menu-wrap attorna-navigation-font" id=attorna-mobile-menu data-slide=right>
-                        <ul id=menu-main-navigation class=m-menu>
-                           <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="attorna-body-outer-wrapper ">
-    <div class="attorna-body-wrapper clearfix  attorna-with-frame">
-    <div class="attorna-logo  attorna-item-pdlr">
-        <div class=attorna-logo-inner style="margin: auto;">
-            <a class href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu();?></a>
-        </div>
-    </div>
-    <header class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed" data-navigation-offset=75px>
-        <div class=attorna-header-background></div>
-        <div class="attorna-header-container  attorna-container">
-            <div class="attorna-header-container-inner clearfix">
+    <div class="attorna-body-outer-wrapper ">
+        <div class="attorna-body-wrapper clearfix  attorna-with-frame">
+            <div class="attorna-logo  attorna-item-pdlr">
+                <div class=attorna-logo-inner style="margin: auto;">
+                    <a class
+                        href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu();?></a>
+                </div>
+            </div>
+            <header
+                class="attorna-header-wrap attorna-header-style-plain  attorna-style-menu-right attorna-sticky-navigation attorna-style-fixed"
+                data-navigation-offset=75px>
+                <div class=attorna-header-background></div>
+                <div class="attorna-header-container  attorna-container">
+                    <div class="attorna-header-container-inner clearfix">
 
-                <div class="attorna-navigation attorna-item-pdlr clearfix" style="width: 100%;text-align: center;">
-                    <div class=attorna-main-menu id=attorna-main-menu>
-                        <ul id=menu-main-navigation-1 class=sf-menu>
-                            <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
-                        </ul>
-                        <div class=attorna-navigation-slide-bar id=attorna-navigation-slide-bar></div>
+                        <div class="attorna-navigation attorna-item-pdlr clearfix"
+                            style="width: 100%;text-align: center;">
+                            <div class=attorna-main-menu id=attorna-main-menu>
+                                <ul id=menu-main-navigation-1 class=sf-menu>
+                                    <?php Menu_Widget_Menu::getInstance()->setLan($this->lan)->setParent(1)->render();?>
+                                </ul>
+                                <div class=attorna-navigation-slide-bar id=attorna-navigation-slide-bar></div>
+                            </div>
+                            <div class="attorna-main-menu-right-wrap clearfix ">
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="attorna-main-menu-right-wrap clearfix ">
+                </div>
+            </header>
 
+
+            <div class="attorna-page-title-wrap  attorna-style-custom attorna-center-align">
+                <div class=attorna-header-transparent-substitute></div>
+                <div class=attorna-page-title-overlay></div>
+                <div class="attorna-page-title-container attorna-container">
+                    <div class="attorna-page-title-content attorna-item-pdlr">
+                        <h1 class="attorna-page-title">
+                            <?PHP echo $this->page->PagName; ?>
+                        </h1>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+            <div class=attorna-page-wrapper id=attorna-page-wrapper>
+                <div class=gdlr-core-page-builder-body>
+                    <div class=gdlr-core-pbf-section>
+                        <div class="gdlr-core-pbf-section-container gdlr-core-container clearfix">
+                            <div class=gdlr-core-pbf-element>
+                                <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-column"
+                                    style="padding-bottom: 40px ;">
+                                    <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout=fitrows>
+                                        <?php Events_Widget_News::getInstance()->setLan($this->lan)->setLimit(20)->render();?>
 
-
-        <div class="attorna-page-title-wrap  attorna-style-custom attorna-center-align">
-            <div class=attorna-header-transparent-substitute></div>
-            <div class=attorna-page-title-overlay></div>
-            <div class="attorna-page-title-container attorna-container">
-                <div class="attorna-page-title-content attorna-item-pdlr">
-                    <h1 class="attorna-page-title"><?PHP echo $this->page->PagName; ?></h1>
-                </div>
-            </div>
-        </div>
-        <div class=attorna-page-wrapper id=attorna-page-wrapper>
-            <div class=gdlr-core-page-builder-body>
-                <div class=gdlr-core-pbf-section>
-                    <div class="gdlr-core-pbf-section-container gdlr-core-container clearfix">
-                        <div class=gdlr-core-pbf-element>
-                            <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-column" style="padding-bottom: 40px ;">
-                                <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout=fitrows>
-                                    <?php Events_Widget_News::getInstance()->setLan($this->lan)->setLimit(20)->render();?>
+                                    </div>
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <footer>
+                <div class="attorna-footer-wrapper ">
+                    <div class="attorna-footer-container attorna-container clearfix">
+                        <div class="attorna-footer-column attorna-item-pdlr attorna-column-30">
+                            <div id=text-1 class="widget widget_text attorna-widget">
+                                <div class=textwidget>
+                                    <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter();?>
+                                        <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
+                                        <br>
+                                        <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription;?>
+                                    </p>
+                                    <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align"
+                                        style="padding-bottom: 0px ;">
+                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "linkedinUrl")->TxtDescription;?>"
+                                            target=_blank class=gdlr-core-social-network-icon title=linkedin
+                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin"></i></a>
+                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "twitterUrl")->TxtDescription;?>"
+                                            target=_blank class=gdlr-core-social-network-icon title=twitter
+                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
+                            <div id=text-7 class="widget widget_text attorna-widget">
+                                <h3 class="attorna-widget-title">
+                                    <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitleContact")->TxtDescription;?>
+                                </h3><span class=clear></span>
+                                <div class=textwidget>
+                                    <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription;?>
+                                    </p>
+                                    <p><span
+                                            style="color: #fff;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription;?></span>
+                                        <br> <span
+                                            style="color: #545d66;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription;?></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
+                            <div id=gdlr-core-custom-menu-widget-4
+                                class="widget widget_gdlr-core-custom-menu-widget attorna-widget">
+                                <h3 class="attorna-widget-title">
+                                    <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitlePracticeAreas")->TxtDescription;?>
+                                </h3><span class=clear></span>
+                                <div class=menu-practice-areas-container>
+                                    <?php Services_Widget_ServicesMenu::getInstance()->setLan($this->lan)->setParent(18)->render();?>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=attorna-copyright-wrapper>
+                    <div class="attorna-copyright-container attorna-container clearfix">
+                        <div class="attorna-copyright-left attorna-item-pdlr">
+                            <?=Texts_Helper_Text::getInstance()->get($this->lan, "Copyright")->TxtDescription;?></div>
+                        <div class="attorna-copyright-right attorna-item-pdlr">
+                            <?php Menu_Widget_MenuFooter::getInstance()->setLan($this->lan)->setParent(18)->render();?>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <footer>
-            <div class="attorna-footer-wrapper ">
-                <div class="attorna-footer-container attorna-container clearfix">
-                    <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
-                        <div id=text-1 class="widget widget_text attorna-widget">
-                            <div class=textwidget>
-                                <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter();?>
-                                    <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
-                                    <br> <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription;?></p>
-                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;">
-                                <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "linkedinUrl")->TxtDescription;?>" target=_blank class=gdlr-core-social-network-icon title=linkedin style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin" ></i></a>
-                                <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "twitterUrl")->TxtDescription;?>" target=_blank class=gdlr-core-social-network-icon title=twitter style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter" ></i></a>
-
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
-                        <div id=text-7 class="widget widget_text attorna-widget">
-                            <h3 class="attorna-widget-title"><?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitleContact")->TxtDescription;?></h3><span class=clear></span>
-                            <div class=textwidget>
-                                <p><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactAddress")->TxtDescription;?></p>
-                                <p><span style="color: #fff;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactPhone")->TxtDescription;?></span>
-                                    <br> <span style="color: #545d66;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription;?></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="attorna-footer-column attorna-item-pdlr attorna-column-30">
-                        <div id=gdlr-core-custom-menu-widget-4 class="widget widget_gdlr-core-custom-menu-widget attorna-widget">
-                            <h3 class="attorna-widget-title"><?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterTitlePracticeAreas")->TxtDescription;?></h3><span class=clear></span>
-                            <div class=menu-practice-areas-container>
-                                <?php Services_Widget_ServicesMenu::getInstance()->setLan($this->lan)->setParent(18)->render();?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=attorna-copyright-wrapper>
-                <div class="attorna-copyright-container attorna-container clearfix">
-                    <div class="attorna-copyright-left attorna-item-pdlr"><?=Texts_Helper_Text::getInstance()->get($this->lan, "Copyright")->TxtDescription;?></div>
-                    <div class="attorna-copyright-right attorna-item-pdlr">
-                        <?php Menu_Widget_MenuFooter::getInstance()->setLan($this->lan)->setParent(18)->render();?>
-
-                        </div>
-                </div>
-            </div>
-        </footer>
     </div>
-</div>
 
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery-migrate.min.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery.js'></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/jquery-migrate.min.js'>
+    </script>
+    <script
+        src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'>
+    </script>
+    <script
+        src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'>
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js">
+    </script>
+    <script
+        src="<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js">
+    </script>
 
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/plugins/combine/script.js'></script>
-<script>
+    <script
+        src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/plugins/combine/script.js'>
+    </script>
+    <script>
     var gdlr_core_pbf = {
         "admin": "",
         "video": {
@@ -237,14 +291,17 @@ echo Com_Helper_Style::getInstance();
         },
         "ajax_url": "https:\/\/demo.goodlayers.com\/attorna\/wp-admin\/admin-ajax.php"
     };
-</script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/include/js/page-builder.js'></script>
+    </script>
+    <script
+        src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/plugins/goodlayers-core/include/js/page-builder.js'>
+    </script>
 
 
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/ui/effect.min.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.mmenu.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.superfish.js'></script>
-<script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/script-core.js'></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery/ui/effect.min.js'></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.mmenu.js'></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.superfish.js'></script>
+    <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/script-core.js'></script>
 
 </body>
+
 </html>

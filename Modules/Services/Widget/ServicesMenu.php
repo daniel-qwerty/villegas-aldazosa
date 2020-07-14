@@ -37,14 +37,16 @@ class Services_Widget_ServicesMenu extends Com_Object
 
         $list = Services_Model_Service::getInstance()->getListService($this->lan->LanId);?>
 
-        <ul id=menu-practice-areas class="gdlr-core-custom-menu-widget gdlr-core-menu-style-half">
-        <?php foreach ($list as $item) {?>
+<ul id=menu-practice-areas class="gdlr-core-custom-menu-widget gdlr-core-menu-style-half" style="display:grid;">
+    <?php foreach ($list as $item) {?>
 
-            <li class="menu-item" style="font-size: 15px;"><a href="<?PHP echo Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/area/' . $item->SerUrl; ?>"><?=$item->SerTitle?></a></li>
+    <li class="menu-item" style="font-size: 12px;"><a
+            href="<?PHP echo Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/area/' . $item->SerId; ?>"><?=$item->SerTitle?></a>
+    </li>
 
-        <?PHP }?>
-        </ul>
-    <?php
+    <?PHP }?>
+</ul>
+<?php
 }
 
 }
