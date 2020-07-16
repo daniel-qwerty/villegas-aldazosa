@@ -70,8 +70,8 @@ class Events_Widget_Recientes extends Com_Object
             <div class="gdlr-core-recent-post-widget clearfix">
                 <div class="gdlr-core-recent-post-widget-thumbnail gdlr-core-media-image"><img src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?PHP echo $new->EveImage; ?>" alt width=150 height=150 title=drew-beamer-679505-unsplash></div>
                 <div class=gdlr-core-recent-post-widget-content>
-                    <div class=gdlr-core-recent-post-widget-title><a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "item/" . $new->EveId); ?>"><?PHP echo $new->EveTitle; ?></a></div>
-                    <div class=gdlr-core-recent-post-widget-info><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class=gdlr-core-head ><i class=icon_clock_alt ></i></span><a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "item/" . $new->EveId); ?>"><?PHP echo $new->EveDate; ?></a></span>
+                    <div class=gdlr-core-recent-post-widget-title><a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" . $new->EveId); ?>"><?PHP echo $new->EveTitle; ?></a></div>
+                    <div class=gdlr-core-recent-post-widget-info><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class=gdlr-core-head ><i class=icon_clock_alt ></i></span><a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" . $new->EveId); ?>"><?PHP echo $new->EveDate; ?></a></span>
                     </div>
                 </div>
             </div>

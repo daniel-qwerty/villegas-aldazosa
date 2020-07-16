@@ -1,21 +1,24 @@
 <?PHP
 
-class Events_Controller_Admin extends Admin_Controller_Admin {
+class Events_Controller_Admin extends Admin_Controller_Admin
+{
 
-    public function init() {
+    public function init()
+    {
         parent::init();
         Com_Helper_Title::getInstance()->title = "M&oacute;dulo Noticias";
         Com_Helper_BreadCrumbs::getInstance()->add("Eventos", "/Admin/Events");
-        
+
 //        $obj = get('userType');
-//        if($obj == 1){
-//            $this->redirect(Com_Helper_Url::getInstance()->generateUrl("es", "error"));
-//            exit;
-//        }
-        
+        //        if($obj == 1){
+        //            $this->redirect(Com_Helper_Url::getInstance()->generateUrl("es", "error"));
+        //            exit;
+        //        }
+
     }
 
-    public function Add() {
+    public function Add()
+    {
         Com_Helper_BreadCrumbs::getInstance()->add("Item", "/Admin/Events/Add");
         $languages = Language_Model_Language::getInstance()->getList();
         if ($this->isPost()) {
@@ -40,12 +43,13 @@ class Events_Controller_Admin extends Admin_Controller_Admin {
         $this->assign('Video');
         $this->assign("languages", $languages);
         $this->assign("Language", (get('lan') != "" ? get('lan') : $languages[0]->LanId));
-        
+
         $this->assign('Category', CatEvents_Model_CatEvent::getInstance()->getList($languages[0]->LanId));
-        
+
     }
 
-    public function Edit() {
+    public function Edit()
+    {
         Com_Helper_BreadCrumbs::getInstance()->add("Item", "/Admin/Events/Add");
         $languages = Language_Model_Language::getInstance()->getList();
         $language = (get('lan') != "" ? get('lan') : $languages[0]->LanId);
@@ -68,25 +72,24 @@ class Events_Controller_Admin extends Admin_Controller_Admin {
         $this->assign("Id", $entity->EveId);
         $this->assign("Language", $entity->EveLanId);
 
-       $this->assign('Title',$entity->EveTitle);
-        $this->assign('Category',$entity->EveCatId);
-        $this->assign('Content',$entity->EveContent);
-        $this->assign('Date',$entity->EveDate);
-        $this->assign('Image',$entity->EveImage);
-        $this->assign('Important',$entity->EveImportant);
-        $this->assign('Status',$entity->EveStatus);
-        $this->assign('Video',$entity->EveVideo);
+        $this->assign('Title', $entity->EveTitle);
+        $this->assign('Category', $entity->EveCatId);
+        $this->assign('Content', $entity->EveContent);
+        $this->assign('Date', $entity->EveDate);
+        $this->assign('Image', $entity->EveImage);
+        $this->assign('Important', $entity->EveImportant);
+        $this->assign('Status', $entity->EveStatus);
+        $this->assign('Video', $entity->EveVideo);
         $this->assign("languages", $languages);
-        
-        $this->assign('Category', CatEvents_Model_CatEvent::getInstance()->getList($languages[0]->LanId));
-        
+
+        $this->assign('Categories', CatEvents_Model_CatEvent::getInstance()->getList($languages[0]->LanId));
+
     }
 
-    public function Delete() {
+    public function Delete()
+    {
         Events_Model_Event::getInstance()->doDelete(get('id'));
         $this->redirect(Com_Helper_Url::getInstance()->urlBase . '/Admin/Events');
     }
 
 }
-
-?>
