@@ -84,11 +84,12 @@ echo Com_Helper_Style::getInstance();
             <div class="attorna-mobile-header-container attorna-container clearfix">
                 <div class="attorna-logo  attorna-item-pdlr">
                     <div class=attorna-logo-inner>
-                        <a class href=index.html><img src=alt width=400 height=71 title=logo></a>
+                        <a class
+                            href=<?=Com_Helper_Url::getInstance()->urlBase;?>/es/page/index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMobile")->renderLogoMenu();?></a>
                     </div>
                 </div>
                 <div class=attorna-mobile-menu-right>
-                    <div class=attorna-main-menu-search id=attorna-mobile-top-search><i class="fa fa-search"></i></div>
+
                     <div class=attorna-top-search-wrap>
                         <div class=attorna-top-search-close></div>
                         <div class=attorna-top-search-row>
@@ -120,7 +121,7 @@ echo Com_Helper_Style::getInstance();
     </div>
     <div class="attorna-body-outer-wrapper ">
         <div class="attorna-body-wrapper clearfix  attorna-with-frame">
-            <div class="attorna-logo  attorna-item-pdlr">
+            <div class="attorna-logo  attorna-item-pdlr sectionBigLogo">
                 <div class=attorna-logo-inner style="margin: auto;">
                     <a class
                         href=index.html><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoMenu")->renderLogoMenu();?></a>
@@ -261,18 +262,9 @@ echo Com_Helper_Style::getInstance();
                                     <p><?php Gallery_Widget_Clientes::getInstance()->setLan($this->lan)->setType("LogoFooter")->renderLogoFooter();?>
                                         <br> <span class=gdlr-core-space-shortcode style="margin-top: -27px ;"></span>
                                         <br>
-                                        <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription;?>
+                                        <!-- <?=Texts_Helper_Text::getInstance()->get($this->lan, "FooterResume")->TxtDescription;?> -->
                                     </p>
-                                    <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align"
-                                        style="padding-bottom: 0px ;">
-                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "linkedinUrl")->TxtDescription;?>"
-                                            target=_blank class=gdlr-core-social-network-icon title=linkedin
-                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin"></i></a>
-                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "twitterUrl")->TxtDescription;?>"
-                                            target=_blank class=gdlr-core-social-network-icon title=twitter
-                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter"></i></a>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -289,6 +281,16 @@ echo Com_Helper_Style::getInstance();
                                         <br> <span
                                             style="color: #545d66;"><?=Texts_Helper_Text::getInstance()->get($this->lan, "ContactEmail")->TxtDescription;?></span>
                                     </p>
+                                    <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align"
+                                        style="padding-bottom: 0px ;">
+                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "linkedinUrl")->TxtDescription;?>"
+                                            target=_blank class=gdlr-core-social-network-icon title=linkedin
+                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-linkedin"></i></a>
+                                        <a href="<?=Texts_Helper_Text::getInstance()->get($this->lan, "twitterUrl")->TxtDescription;?>"
+                                            target=_blank class=gdlr-core-social-network-icon title=twitter
+                                            style="font-size: 16px ;color: #545d66 ;"><i class="fa fa-twitter"></i></a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>

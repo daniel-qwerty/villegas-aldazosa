@@ -976,13 +976,13 @@ blockquote {
 }
 
 .attorna-body .attorna-top-bar .attorna-top-bar-right-button {
-    background: #071D49;
+    background: #081e4b;
 }
 
 .attorna-header-background,
 .attorna-sticky-menu-placeholder,
 .attorna-header-style-boxed.attorna-fixed-navigation {
-    background-color: #071D49;
+    background-color: #081e4b;
 }
 
 .attorna-header-wrap.attorna-header-style-plain {
@@ -1552,7 +1552,7 @@ ul.gdlr-core-custom-menu-widget.gdlr-core-menu-style-box li.current-menu-ancesto
 }
 
 .attorna-footer-wrapper {
-    background-color: #071D49;
+    background-color: #081e4b;
 }
 
 .attorna-footer-wrapper .attorna-widget-title {
@@ -1597,19 +1597,19 @@ ul.gdlr-core-custom-menu-widget.gdlr-core-menu-style-box li.current-menu-ancesto
 }
 
 .attorna-copyright-wrapper {
-    background-color: #333F48;
+    background-color: #9DA3A7;
 }
 
 .attorna-copyright-wrapper {
-    color: #a5a6a7;
+    color: #3a3a3a;
 }
 
 .attorna-copyright-wrapper a {
-    color: #a5a6a7;
+    color: #3a3a3a;
 }
 
 .attorna-copyright-wrapper a:hover {
-    color: #ffffff;
+    color: #3a3a3a;
 }
 
 .attorna-footer-back-to-top-button {
@@ -2259,7 +2259,7 @@ pre {
 .attorna-body .attorna-button,
 .attorna-body input[type="button"],
 .attorna-body input[type="submit"] {
-    background-color: #071D49;
+    background-color: #081e4b;
 }
 
 .attorna-blog-style-4 .attorna-comments-area .form-submit input[type="submit"] {
@@ -3546,7 +3546,7 @@ del span.woocommerce-Price-amount.amount {
 }
 
 .gdlr-core-page-builder-body [data-skin="Grey Carousel"] .gdlr-core-skin-e-content {
-    color: #071D49
+    color: #081e4b
 }
 
 .gdlr-core-page-builder-body [data-skin="Grey Carousel"] .gdlr-core-flexslider-nav.gdlr-core-round-style li a i,
@@ -3699,4 +3699,7 @@ del span.woocommerce-Price-amount.amount {
         display: block;
     }
 
+    .sectionBigLogo {
+        display: none;
+    }
 }
