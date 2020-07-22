@@ -1,6 +1,7 @@
 <?php
 
-class Entities_Event extends Com_Database_Entity_Language {
+class Entities_Event extends Com_Database_Entity_Language
+{
 
     public $tableName = "Event";
     public $keyField = "EveId";
@@ -13,7 +14,9 @@ class Entities_Event extends Com_Database_Entity_Language {
     public $EveDate;
     public $EveImportant;
     public $EveStatus;
-    public $EveImage; 
-    public $EveVideo; 
+    public $EveImage;
+    public $EveVideo;
+    public $EveAuthor;
+    public $EveResumen;
 
 }

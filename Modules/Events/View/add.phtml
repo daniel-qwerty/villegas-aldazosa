@@ -31,6 +31,14 @@ $control->length = 50;
 $control->required = true;
 $form->add($control);
 
+$control = new Com_Wizard_Form_Control_Text();
+$control->name = "Resumen";
+$control->label = "Resumen";
+$control->default = $this->Resumen;
+$control->length = 50;
+$control->rows = 3;
+$form->add($control);
+
 $control = new Com_Wizard_Form_Control_CKEditor();
 $control->name = "Content";
 $control->label = "Contenido";
@@ -38,6 +46,14 @@ $control->default = $this->Content;
 $control->required = true;
 $control->rows = 3;
 $control->addParameter("style ", "height:120px;");
+$form->add($control);
+
+$control = new Com_Wizard_Form_Control();
+$control->name = "Author";
+$control->label = "Autor";
+$control->default = $this->Author;
+$control->length = 50;
+$control->required = true;
 $form->add($control);
 
 $control = new Com_Wizard_Form_Control_Date();

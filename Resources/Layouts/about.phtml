@@ -642,6 +642,19 @@ echo Com_Helper_Style::getInstance();
     <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.mmenu.js'></script>
     <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/jquery.superfish.js'></script>
     <script src='<?=Com_Helper_Url::getInstance()->urlBase;?>/Resources/Script/Public/script-core.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173265186-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173265186-1');
+    </script>
+
 
 </body>
 
