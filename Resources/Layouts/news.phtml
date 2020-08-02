@@ -120,7 +120,7 @@ echo Com_Helper_Style::getInstance();
         </div>
     </div>
     <div class="attorna-body-outer-wrapper ">
-        <div class="attorna-body-wrapper clearfix  attorna-with-frame">
+        <div class="attorna-body-wrapper clearfix ">
             <div class="attorna-logo  attorna-item-pdlr sectionBigLogo">
                 <div class=attorna-logo-inner style="margin: auto;">
                     <a class
@@ -162,18 +162,25 @@ echo Com_Helper_Style::getInstance();
                     </div>
                 </div>
             </div>
+
             <div class=attorna-page-wrapper id=attorna-page-wrapper>
                 <div class=gdlr-core-page-builder-body>
-                    <div class=gdlr-core-pbf-section>
-                        <div class="gdlr-core-pbf-section-container gdlr-core-container clearfix">
-                            <div class=gdlr-core-pbf-element>
-                                <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-column"
-                                    style="padding-bottom: 40px ;">
-                                    <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout=fitrows>
-                                        <?php Events_Widget_News::getInstance()->setLan($this->lan)->setLimit(20)->render();?>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 60px 0px 10px 0px;">
+                        <div class=gdlr-core-pbf-background-wrap style="background-color: #f7f7f7 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class=gdlr-core-pbf-element>
+                                    <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-column-with-frame"
+                                        style="padding-bottom: 40px ;">
+                                        <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix"
+                                            data-layout=masonry>
+                                            <?php Events_Widget_News::getInstance()->setLan($this->lan)->setLimit(20)->render();?>
 
+
+
+
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

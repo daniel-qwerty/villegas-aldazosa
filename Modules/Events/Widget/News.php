@@ -41,22 +41,23 @@ class Events_Widget_News extends Com_Object
         foreach ($list as $new) {
             ?>
 
-<div class="gdlr-core-item-list  gdlr-core-item-pdlr gdlr-core-column-20">
-    <div class="gdlr-core-blog-grid gdlr-core-style-3  gdlr-core-with-thumbnail">
-        <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover"
-            style="border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
+<div class="gdlr-core-item-list  gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column">
+    <div class="gdlr-core-blog-grid gdlr-core-style-3  gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background  gdlr-core-with-thumbnail"
+        style="border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
+        <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
             <a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
-                $new->EveId); ?>"><img
-                    src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?PHP echo $new->EveImage; ?>" alt
-                    width=700 height=660 title=drew-beamer-679505-unsplash></a>
+                $new->EveId); ?>">
+                <img src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?PHP echo $new->EveImage; ?>" alt
+                    width=2000 height=1333 title=drew-beamer-679505-unsplash></a>
         </div>
-        <div class=gdlr-core-blog-grid-content-wrap>
+        <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position"
+            style="padding-right: 40px;padding-left: 40px;">
             <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                style="font-size: 18px ;font-weight: 700 ;letter-spacing: 0px ;"><a
+                style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;"><a
                     href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
                     $new->EveId); ?>" >
                     <?PHP echo $new->EveTitle; ?></a></h3>
-            <div class=gdlr-core-blog-content style="overflow: hidden;height: 150px;line-height: 31px;">
+            <div class=gdlr-core-blog-content>
                 <?PHP echo $new->EveResumen; ?>
                 <div class=clear></div>
             </div>
@@ -66,11 +67,15 @@ class Events_Widget_News extends Com_Object
                             class=icon_clock_alt></i></span><a href=#>
                         <?PHP echo $new->EveDate; ?></a></span><span
                     class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span
-                        class=gdlr-core-blog-info-sep></span></span>
+                        class=gdlr-core-blog-info-sep>•</span><span class=gdlr-core-head><i
+                            class=icon_documents_alt></i></span><a href=# title="Posts by James Smith" rel=author>James
+                        Smith</a></span>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 <?php
