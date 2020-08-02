@@ -58,7 +58,7 @@ class Events_Widget_News extends Com_Object
                     $new->EveId); ?>" >
                     <?PHP echo $new->EveTitle; ?></a></h3>
             <div class=gdlr-core-blog-content>
-                <?PHP echo substr($new->EveContent, 0, 100) . '...'; ?>
+                <?PHP echo substr($new->EveResumen, 0, 100) . '...'; ?>
                 <div class=clear></div>
             </div>
             <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span
