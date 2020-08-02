@@ -45,7 +45,7 @@ class Events_Widget_News extends Com_Object
     <div class="gdlr-core-blog-grid gdlr-core-style-3  gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background  gdlr-core-with-thumbnail"
         style="border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
         <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-            <a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
+            <a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, " noticia/" .
                 $new->EveId); ?>">
                 <img src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?PHP echo $new->EveImage; ?>" alt
                     width=2000 height=1333 title=drew-beamer-679505-unsplash></a>
@@ -54,11 +54,11 @@ class Events_Widget_News extends Com_Object
             style="padding-right: 40px;padding-left: 40px;">
             <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
                 style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;"><a
-                    href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
+                    href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, " noticia/" .
                     $new->EveId); ?>" >
                     <?PHP echo $new->EveTitle; ?></a></h3>
             <div class=gdlr-core-blog-content>
-                <?PHP echo $new->EveResumen; ?>
+                <?PHP echo substr($new->EveResumen, 0, 100) . '...'; ?>
                 <div class=clear></div>
             </div>
             <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span
