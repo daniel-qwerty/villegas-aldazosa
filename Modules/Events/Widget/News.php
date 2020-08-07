@@ -68,8 +68,7 @@ class Events_Widget_News extends Com_Object
                         <?PHP echo $new->EveDate; ?></a></span><span
                     class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span
                         class=gdlr-core-blog-info-sep>•</span><span class=gdlr-core-head><i
-                            class=icon_documents_alt></i></span><a href=# title="Posts by James Smith" rel=author>James
-                        Smith</a></span>
+                            class=icon_documents_alt></i></span><a href=# title="Posts by James Smith" rel=author><?PHP echo $new->EveAuthor; ?></a></span>
             </div>
         </div>
     </div>
