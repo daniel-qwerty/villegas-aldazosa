@@ -63,7 +63,7 @@ class Services_Widget_Services extends Com_Object
                             </div>
                         </div>
                         <div class=gdlr-core-pbf-element>
-                            <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border" href="<?PHP echo Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/area/' . $item->SerId; ?>" style="font-size: 13px ;font-weight: 600 ;letter-spacing: 2px ;color: #b1976b ;padding: 0px 0px 0px 0px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span class=gdlr-core-content >Leer Más</span><i class="gdlr-core-pos-right fa fa-long-arrow-right" style="color: #b1976b ;"  ></i></a></div>
+                            <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align"><a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border" href="<?PHP echo Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/area/' . $item->SerId; ?>" style="font-size: 13px ;font-weight: 600 ;letter-spacing: 2px ;color: #b1976b ;padding: 0px 0px 0px 0px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span class=gdlr-core-content ><?=Texts_Helper_Text::getInstance()->get($this->lan, "txtReadMore")->TxtDescription;?></span><i class="gdlr-core-pos-right fa fa-long-arrow-right" style="color: #b1976b ;"  ></i></a></div>
                         </div>
                     </div>
                 </div>

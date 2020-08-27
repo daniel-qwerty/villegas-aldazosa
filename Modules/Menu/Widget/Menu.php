@@ -64,9 +64,14 @@ class Menu_Widget_Menu extends Com_Object
                     </li>
 
 
-                    <?php
+                    <?php 
                     }
             endforeach?>
+            <div class="flags">
+            <a href="<?=Com_Helper_Url::getInstance()->urlBase;?>/en/page/index.html" style=margin-left:21px;><img src="<?PHP echo Com_Helper_Url::getInstance()->getImage(); ?>/Public/english.svg" alt="English" style="width:20px"></a>
+            <a href="<?=Com_Helper_Url::getInstance()->urlBase;?>/es/page/index.html" style=margin-left:21px;><img src="<?PHP echo Com_Helper_Url::getInstance()->getImage(); ?>/Public/spanish.svg" alt="Español" style="width:20px"></a>
+            </div>
+            
 
 <?PHP
     }

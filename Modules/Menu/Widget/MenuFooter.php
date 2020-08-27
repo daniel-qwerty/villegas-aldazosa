@@ -47,8 +47,7 @@ class Menu_Widget_MenuFooter extends Com_Object {
                 
             
             <?PHP endforeach;            ?>
-       
-
+    
         <?PHP
     }
 

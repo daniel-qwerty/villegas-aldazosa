@@ -22,7 +22,7 @@ define("FILE_PREFIX", "");
 
 // define("DATABASE_SERVER", "localhost");
 // define("DATABASE_PORT", "3306");
-// define("DATABASE_NAME", "villegas");
+// define("DATABASE_NAME", "villegasAldazosa");
 // define("DATABASE_USERNAME", "root");
 // define("DATABASE_PASSWORD", "");
 // define("DATABASE_PREFIX", "");
