@@ -4307,6 +4307,13 @@ del span.woocommerce-Price-amount.amount {
   display: flex;
 }
 
+.imagesNews {
+  width: 100%;
+  height: 280px !important;
+  object-fit: cover;
+  object-position: top;
+}
+
 /**Mobile Resposive Section**/
 
 /*

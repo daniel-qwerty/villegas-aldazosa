@@ -48,7 +48,7 @@ class Events_Widget_News extends Com_Object
             <a href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
                 $new->EveId); ?>">
                 <img src="<?=Com_Helper_Url::getInstance()->getUploads();?>/Image/<?PHP echo $new->EveImage; ?>" alt
-                    width=2000 height=1333 title=drew-beamer-679505-unsplash></a>
+                    class="imagesNews" title=drew-beamer-679505-unsplash></a> 
         </div>
         <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position"
             style="padding-right: 40px;padding-left: 40px;">
