@@ -4323,6 +4323,10 @@ del span.woocommerce-Price-amount.amount {
   object-fit: contain;
 }
 
+.gdlr-core-opacity-on-hover {
+  background: transparent !important; 
+}
+
 /**Mobile Resposive Section**/
 
 /*
