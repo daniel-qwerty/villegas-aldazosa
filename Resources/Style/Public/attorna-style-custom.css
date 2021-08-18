@@ -4324,7 +4324,7 @@ del span.woocommerce-Price-amount.amount {
 }
 
 .gdlr-core-opacity-on-hover {
-  background: transparent !important; 
+  background: white !important; 
 }
 
 /**Mobile Resposive Section**/
