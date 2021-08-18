@@ -35,7 +35,7 @@ class Teams_Widget_Team extends Com_Object
     public function render()
     {
 
-        $list = Teams_Model_Team::getInstance()->getListTeamSocios($this->lan->LanId, 2);
+        $list = Teams_Model_Team::getInstance()->getListTeamSocios($this->lan->LanId, 3);
 
         foreach ($list as $item) {
 
