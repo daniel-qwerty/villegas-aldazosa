@@ -107,6 +107,15 @@ $control->isImage = true;
 $form->add($control);
 
 $control = new Com_Wizard_Form_Control_Select();
+$control->name = "Type";
+$control->label = "Tipo";
+$control->default = $this->Type;
+$control->required = true;
+$control->addItem('1', 'Partner');
+$control->addItem('0', 'Asocciate');
+$form->add($control);
+
+$control = new Com_Wizard_Form_Control_Select();
 $control->name = "Status";
 $control->label = "Estado";
 $control->default = $this->Status;

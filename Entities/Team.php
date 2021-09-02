@@ -20,6 +20,7 @@ class Entities_Team extends Com_Database_Entity_Language{
     public $TeamContenido;
     public $TeamInfo;
     public $TeamStatus;
+    public $TeamTipo;
 
 
 }

@@ -34,6 +34,7 @@ class Teams_Model_Team extends Com_Module_Model
             $db->TeamContenido = $obj->Contenido;
             $db->TeamInfo = $obj->Info;
             $db->TeamStatus = $obj->Status;
+            $db->TeamTipo = $obj->Type;
 
             $db->action = ACTION_INSERT;
             $db->save();
@@ -67,6 +68,7 @@ class Teams_Model_Team extends Com_Module_Model
         $db->TeamContenido = $obj->Contenido;
         $db->TeamInfo = $obj->Info;
         $db->TeamStatus = $obj->Status;
+        $db->TeamTipo = $obj->Type;
 
         $db->action = ACTION_UPDATE;
         $db->save();

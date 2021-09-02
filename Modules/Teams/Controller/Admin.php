@@ -52,6 +52,7 @@ class Teams_Controller_Admin extends Admin_Controller_Admin {
         $this->assign('Contenido');
         $this->assign('Info');
         $this->assign('Status');
+        $this->assign('Type');
         $this->assign("languages", $languages);
         $this->assign("Language", (get('lan') != "" ? get('lan') : $languages[0]->LanId));
 
@@ -109,6 +110,7 @@ class Teams_Controller_Admin extends Admin_Controller_Admin {
         $this->assign('Contenido', $entity->TeamContenido);
         $this->assign('Info', $entity->TeamInfo);
         $this->assign('Status', $entity->TeamStatus);
+        $this->assign('Type', $entity->TeamTipo);
 
 
 
