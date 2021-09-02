@@ -102,13 +102,13 @@ class Teams_Model_Team extends Com_Module_Model
     public function getListTeamSocios($lanId, $limit = 1000, $inicio = 0)
     {
         $db = new Entities_Team();
-        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1 and TeamCargo = 'Partner'")->limit(0, 3));
+        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1 and Teamtipo = 'Partner'")->limit(0, 3));
     }
 
     public function getListTeam($lanId, $limit = 1000, $inicio = 0)
     {
         $db = new Entities_Team();
-        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1 and TeamCargo = 'Associate'"));
+        return $db->getAll($db->getList()->where("TeamLanId={$lanId} and TeamStatus = 1 and TeamTipo = 'Asocciate'"));
     }
 
     public function getListTeamCargo($lanId, $cargoId)
