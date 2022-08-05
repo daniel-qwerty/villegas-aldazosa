@@ -64,7 +64,6 @@ class Users_Model_User extends Com_Module_Model {
         $db->UserLogin = $user;
         $db->UserPassword = md5($password);
         $db->get();
-        echo($db);
         return $db;
     }
     
