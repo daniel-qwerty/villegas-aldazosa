@@ -41,7 +41,7 @@ class Events_Widget_News extends Com_Object
         foreach ($list as $new) {
             ?>
 
-<div class="gdlr-core-item-list  gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column">
+<div class="  gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column" style="display: table;">
     <div class="gdlr-core-blog-grid gdlr-core-style-3  gdlr-core-blog-grid-with-frame gdlr-core-item-mgb gdlr-core-skin-e-background  gdlr-core-with-thumbnail"
         style="border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
         <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
@@ -51,17 +51,18 @@ class Events_Widget_News extends Com_Object
                     class="imagesNews" title=drew-beamer-679505-unsplash></a> 
         </div>
         <div class="gdlr-core-blog-grid-frame gdlr-core-sync-height-space-position"
-            style="padding-right: 40px;padding-left: 40px;">
+            style="padding-right: 40px;padding-left: 40px; height: 330px;">
             <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;"><a
+                style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4; /* number of lines to show */line-clamp: 4; -webkit-box-orient: vertical;"><a
                     href="<?PHP echo Com_Helper_Url::getInstance()->generateUrl($this->lan->LanCode, "noticia/" .
                     $new->EveId); ?>" >
                     <?PHP echo $new->EveTitle; ?></a></h3>
+
             <div class=gdlr-core-blog-content>
                 <?PHP echo substr($new->EveResumen, 0, 100) . '...'; ?>
                 <div class=clear></div>
             </div>
-            <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span
+            <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider" style="position: absolute;bottom: 10px;"><span
                     class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span
                         class=gdlr-core-blog-info-sep>•</span><span class=gdlr-core-head><i
                             class=icon_clock_alt></i></span><a href=#>

@@ -54,11 +54,11 @@ class Teams_Widget_TeamList extends Com_Object
         </div>
         <div class=gdlr-core-personnel-list-content-wrap>
             <h3 class="gdlr-core-personnel-list-title"
-                style="font-size: 12px ;font-weight: 600 ;letter-spacing: 3px ;margin-bottom: 4px ;"><a
+                style="font-size: 16px ;font-weight: 600 ;letter-spacing: 3px ;margin-bottom: 4px ;"><a
                     href="<?=Com_Helper_Url::getInstance()->urlBase . '/' . $this->lan->LanCode . '/perfil/' . $item->TeamId?>"><?=$item->TeamNombre?></a>
             </h3>
             <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption"
-                style="font-size: 10px ;font-weight: 500 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;">
+                style="font-size: 13px ;font-weight: 500 ;font-style: normal ;letter-spacing: 2px ;text-transform: uppercase ;">
                 <?=$item->TeamCargo?></div>
 
         </div>
