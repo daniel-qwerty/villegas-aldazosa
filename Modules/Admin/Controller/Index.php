@@ -33,7 +33,7 @@ class Admin_Controller_Index extends Com_Module_Controller {
                 set('userCountry', $country, "SESSION");
                 //Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_INFORMATION, "Bienvenid(@) : {$obj->UserName}");
                 //$this->redirect(Com_Helper_Url::getInstance()->urlBase . "/Admin/Texts");
-                $this->redirect("https://villegasaldazosa.com/web/Admin/Texts");
+                $this->redirect("https://villegasaldazosa.com/Admin/");
             }
             Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_WARNING, "Usuario y/o Codigo de Acceso Incorrecto!!!");
         }
