@@ -31,6 +31,7 @@ class Admin_Controller_Index extends Com_Module_Controller {
                 $country = Public_Model_Country::getInstance()->getByCode($countryCode);
                 //set user country
                 set('userCountry', $country, "SESSION");
+                print('asdasd')
                 //Com_Wizard_Messages::getInstance()->addMessage(MESSAGE_INFORMATION, "Bienvenid(@) : {$obj->UserName}");
                 //$this->redirect(Com_Helper_Url::getInstance()->urlBase . "/Admin/Texts");
                 $this->redirect("https://villegasaldazosa.com/Admin/");
